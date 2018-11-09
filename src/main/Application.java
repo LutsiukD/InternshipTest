@@ -18,7 +18,7 @@ public class Application {
         }
 
         Internship internship = new Internship("Interlink");
-        internship.setMinKnowledge(new Knowledge(3));
+        internship.setMinKnowledge(new Knowledge(university.getEverageKnowledge()));
 
         for(Student student : university.getStudents()){
             boolean enrolledInInternShip = internship.addStudent(student);

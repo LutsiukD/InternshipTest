@@ -22,4 +22,14 @@ public class University {
     public List<Student> getStudents() {
         return students;
     }
+    
+    public float getEverageKnowledge() {
+    	float sum = 0;
+    	float EverageKnowledge;  
+    	for(Student student: this.getStudents()) {
+    		sum += student.getKnowledge().getLevel();
+    	}
+    	EverageKnowledge = sum/students.size();
+    	return EverageKnowledge;
+    }
 }

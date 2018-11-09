@@ -2,13 +2,13 @@ package person.consciousness;
 
 public class Knowledge {
 
-    private int level;
+    private float level;
 
-    public Knowledge(int level) {
+    public Knowledge(float level) {
         this.level = level;
     }
 
-    public int getLevel() {
+    public float getLevel() {
         return level;
     }
 }

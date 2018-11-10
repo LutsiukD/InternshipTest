@@ -1,5 +1,6 @@
 package main;
 
+import provider.StudentProvider;
 import provider.SampleStudentProvider;
 import institution.University;
 import institution.interlink.Internship;
@@ -11,7 +12,7 @@ public class Application {
 
         University university = new University("CH.U.I.");
 
-        SampleStudentProvider provider = new SampleStudentProvider();
+        StudentProvider provider = new SampleStudentProvider();
 
         for(Student student : provider.getAllStudents()) {
             university.addStudent(student);

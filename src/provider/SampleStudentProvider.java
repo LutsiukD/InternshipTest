@@ -6,8 +6,9 @@ import person.consciousness.Knowledge;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SampleStudentProvider {
-
+public class SampleStudentProvider extends StudentProvider {
+    
+    @Override	
     public List<Student> getAllStudents() {
 
         List<Student> students = new LinkedList<>();
